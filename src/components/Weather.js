@@ -49,8 +49,8 @@ const Weather = (props) => {
 
   return (
     <div className="weather">
-      <div className="cur">
-      <h2>Weather report of your current location: </h2>
+      <div className="weatherDetails cur">
+      <h5>Current location: </h5>
       <p>Humidity: {weather.humidity}</p>
       <p>Rain Intensity: {weather.rainIntensity}</p>
       <p>Temperature: {weather.temperature}</p>
@@ -58,8 +58,8 @@ const Weather = (props) => {
       <p>Visibility: {weather.visibility}</p>
       <p>Wind Speed: {weather.windSpeed}</p>
       </div>
-      <div className="dest">
-      <h2>Weather report of your destination: </h2>
+      <div className="weatherDetails dest">
+      <h5>{props.to}: </h5>
       <p>Humidity: {weather2.humidity}</p>
       <p>Rain Intensity: {weather2.rainIntensity}</p>
       <p>Temperature: {weather2.temperature}</p>

@@ -9,8 +9,6 @@ const App = () => {
   const google_API = process.env.REACT_APP_GOOGLE_API;
   const [from, setFrom] = useState("Delhi");
   const [to, setTo] = useState("Patna");
-  console.log({ weather_API });
-  console.log({ google_API });
   return (
     <>
       <Router>
@@ -25,7 +23,7 @@ const App = () => {
           <Route
             exact
             path="/map/:from/:to"
-            element={<WeatherMap apikey={weather_API} />}
+            element={<WeatherMap weather_API={weather_API} google_API={google_API} />}
           ></Route>
         </Routes>
       </Router>
