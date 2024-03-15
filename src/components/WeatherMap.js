@@ -8,10 +8,10 @@ const WeatherMap = (props) => {
   return (
     <div className="containerX">
       <div className="container1">
-        <Map apikey={props.weather_API} from={from} to={to} />
+        <Map apikey={props.google_API} from={from} to={to} />
       </div>
       <div className="container2">
-        <Weather apikey={props.google_API} from={from} to={to} />
+        <Weather apikey1={props.weather_API1} apikey2={props.weather_API2} from={from} to={to} />
       </div>
     </div>
   );
