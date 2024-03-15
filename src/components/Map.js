@@ -1,4 +1,11 @@
-const { google } = require('googleapis');
-const polyline = require('google-polyline');
+import React from 'react'
 
-const apiKey = "";
+const Map = () => {
+  return (
+    <div>
+      This is map.
+    </div>
+  )
+}
+
+export default Map
