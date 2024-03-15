@@ -7,10 +7,10 @@ const WeatherMap = (props) => {
   const {from,to} = useParams();
   return (
     <div className="container">
-      <div className="container2">
+      <div className="container1">
         <Map apikey={props.apikey} from={from} to={to} />
       </div>
-      <div className="container1">
+      <div className="container2">
         <Weather apikey={props.apikey} from={from} to={to} />
       </div>
     </div>
