@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
 const SearchCity = () => {
-  const [from, setFrom] = useState("Delhi");
-  const [to, setTo] = useState("Varanasi");
+  const [from, setFrom] = useState("");
+  const [to, setTo] = useState("");
   const changeTo = (event) => {
     setTo(event.target.value);
   };
