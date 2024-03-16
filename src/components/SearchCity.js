@@ -56,8 +56,10 @@ const SearchCity = () => {
                             <h1>Where do you want to get to?</h1>
                             <h3 className="text-body-secondary fw-1">Get there safely and prepared</h3>
                         </h1>
+                        
                         <form className="my-5">
                             <div className="mb-3">
+                                <p>(Enter the name of the cities only)</p>
                                 <label htmlFor="fromLocation" className="form-label">From:</label>
                                 <input type="text" className="form-control" value={from} onChange={changeFrom}/>
                             </div>
