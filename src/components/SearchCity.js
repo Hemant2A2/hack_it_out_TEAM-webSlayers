@@ -115,15 +115,15 @@ const SearchCity = () => {
                       <div className="carousel-item active">
                         <img src="https://s1.cdn.autoevolution.com/images/news/google-maps-apparently-told-someone-to-drive-into-a-mango-tree-the-internet-goes-nuts-177726_1.jpg" className="d-block w-100 rounded" alt="..."/>
                         <div className="carousel-caption d-none d-md-block" style={{backgroundColor: "rgba(0, 0, 0, 0.579)"}}>
-                          <h5>First slide label</h5>
-                          <p>Some representative placeholder content for the first slide.</p>
+                          <h5>Get to your destination safely</h5>
+                          <p>Get the best possible path which has the least crime records.</p>
                         </div>
                       </div>
                       <div className="carousel-item">
                         <img src="assets/weather_forecasting_websites.jpg" className="d-block w-100 rounded" alt="..."/>
                         <div className="carousel-caption d-none d-md-block" style={{backgroundColor: "rgba(0, 0, 0, 0.579)"}}>
-                          <h5>Second slide label</h5>
-                          <p>Some representative placeholder content for the second slide.</p>
+                          <h5>Get there prepared</h5>
+                          <p>Get the weather info of your current location and your destination.</p>
                         </div>
                       </div>
                     </div>
