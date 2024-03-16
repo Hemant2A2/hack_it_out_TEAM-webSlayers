@@ -5,8 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import WeatherMap from "./components/WeatherMap";
 
 const App = () => {
-  const weather_API1 = process.env.REACT_APP_WEATHER_API;
-  const weather_API2 = process.env.REACT_APP_CITY_API;
+  const weather_API = process.env.REACT_APP_CITY_API;
   const google_API = process.env.REACT_APP_GOOGLE_API;
   const [from, setFrom] = useState("Delhi");
   const [to, setTo] = useState("Patna");
@@ -24,7 +23,7 @@ const App = () => {
           <Route
             exact
             path="/map/:from/:to"
-            element={<WeatherMap weather_API1={weather_API1} weather_API2={weather_API2} google_API={google_API} />}
+            element={<WeatherMap weather_API={weather_API} google_API={google_API} />}
           ></Route>
         </Routes>
       </Router>

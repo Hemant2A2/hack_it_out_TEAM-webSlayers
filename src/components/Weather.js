@@ -22,15 +22,15 @@ const Weather = (props) => {
         console.error("Geolocation is not supported by this browser.");
       }
 
-      const url = `https://api.tomorrow.io/v4/timelines?location=${lat1},${lng1}&fields=temperatureApparent,temperature,humidity,rainIntensity,windSpeed,visibility&timesteps=1h&units=metric&apikey=${props.apikey1}`;
-      const url2 = `https://api.weatherapi.com/v1/current.json?key=${props.apikey2}&q=${props.to}`;
+      const url = `https://api.weatherapi.com/v1/current.json?key=${props.apikey}&q=${lat1},${lng1}`;
+      const url2 = `https://api.weatherapi.com/v1/current.json?key=${props.apikey}&q=${props.to}`;
       try {
         const response = await fetch(url);
         const data = await response.json();
-        const realData = data.data.timelines.intervals.values;
-        setWeather(realData);
+        const realData = data.current;
+        setWeather({temperatureApparent:realData.feelslike_c,temperature:realData.temp_c,humidity:realData.humidity,rainIntensity:realData.precip_mm,windSpeed:realData.wind_kph,visibility:realData.vis_km});
       } catch (error) {
-        
+        console.log("Some problem occurred.")
       }
       try {
         const response2 = await fetch(url2);
@@ -43,7 +43,7 @@ const Weather = (props) => {
     };
 
     fetchData();
-  }, [props.apikey1, props.apikey2, props.to]);
+  }, [props.apikey, props.to]);
 
   return (
     <div className="weather">
