@@ -40,14 +40,7 @@ const SearchCity = () => {
                                 <li><a className="dropdown-item" href="#Feedback">Give us feedback!</a></li>
                             </ul>
                         </li>
-                        <li className="nav-item">
-                            <a className="nav-link disabled" aria-disabled="true" href='/'>Buy Premium</a>
-                        </li>
                     </ul>
-                        <form className="d-flex" role="search">
-                        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-                        <button className="btn btn-outline-primary" type="submit">Search</button>
-                        </form>
                 </div>
 
             </div>
@@ -71,10 +64,6 @@ const SearchCity = () => {
                             <div className="mb-3">
                               <label htmlFor="toLocation" className="form-label">To:</label>
                               <input type="text" className="form-control" value={to} onChange={changeTo}/>
-                            </div>
-                            <div className="mb-3 form-check">
-                              <input type="checkbox" className="form-check-input" id="exampleCheck1"/>
-                              <label className="form-check-label" htmlFor="exampleCheck1">Check me out if you are a human!</label>
                             </div>
                             <a href={`/map/${from}/${to}`} className="btn btn-outline-primary">Get the route!</a>
                         </form>
@@ -103,27 +92,36 @@ const SearchCity = () => {
         <section id="features" style={{backgroundColor: "rgba(0, 0, 0, 0.579)"}}>
             <div className="container py-3 my-5">
                 <div className="row justify-content-center align-items-center display-3" style={{color: "white"}}>
-                    Our Features...
+                We've covered everything you need...
                 </div>
                 
                 <div id="carouselExampleCaptions" className="carousel slide my-3">
                     <div className="carousel-indicators">
                       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
                       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
                     </div>
                     <div className="carousel-inner">
                       <div className="carousel-item active">
                         <img src="https://s1.cdn.autoevolution.com/images/news/google-maps-apparently-told-someone-to-drive-into-a-mango-tree-the-internet-goes-nuts-177726_1.jpg" className="d-block w-100 rounded" alt="..."/>
                         <div className="carousel-caption d-none d-md-block" style={{backgroundColor: "rgba(0, 0, 0, 0.579)"}}>
-                          <h5>Get to your destination safely</h5>
-                          <p>Get the best possible path which has the least crime records.</p>
+                          <h5>Safest route</h5>
+                          <p>Get a safe route for your journey on one click so that you and your loved ones can travel fearlessly</p>
                         </div>
                       </div>
                       <div className="carousel-item">
                         <img src="assets/weather_forecasting_websites.jpg" className="d-block w-100 rounded" alt="..."/>
                         <div className="carousel-caption d-none d-md-block" style={{backgroundColor: "rgba(0, 0, 0, 0.579)"}}>
-                          <h5>Get there prepared</h5>
-                          <p>Get the weather info of your current location and your destination.</p>
+                          <h5>Weather Information</h5>
+                          <p>Get the weather information of every point of your route at the same place</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/contactUs.jpg" class="d-block w-100 rounded" alt="..."/>
+                        <div class="carousel-caption d-none d-md-block" style={{backgroundColor: "rgba(0, 0, 0, 0.579)"}}>
+                          <h5>Emergency helpline</h5>
+                          <p>Access to the nearest police station and hospitals in case of any emergency.<br/>Also contact the emergency helpline number on a single click.
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -140,8 +138,98 @@ const SearchCity = () => {
             </div>
         </section>
     </main>
-    <footer>
-        
+    <footer class="main-footer-section mt-3 py-3 text-white" style={{backgroundColor: "rgb(0, 149, 255)"}}>
+        <div class="contact-datails">
+            <div class="container-xxl" style={{backgroundColor: "rgba(82, 183, 255, 0.53)"}}>
+                <div class="row justify-content-center align-items-center display-5 my-3" id="contactUs">
+                    Contact Us
+                </div>
+                <div class="row g-0">
+                    <div class="col-lg-4">
+                        <div class="contact-div d-flex flex-column justify-content-center align-items-center">
+                            <div class="icon-div rounded">
+                                <h4><a href="#contact-number" style={{color: "white"}}><i class="bi bi-telephone-fill img-fluid"></i></a></h4>
+                            </div>
+                            <p id="contact-number"><small>+91 XXXXXXXXXX</small></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="contact-div d-flex flex-column justify-content-center align-items-center">
+                            <div class="icon-div rounded">
+                                <h4><a href="#email-id" style={{color: "white"}}><i class="bi bi-envelope-fill"></i></a></h4>
+                            </div>
+                            <p id="email-id"><small>team.Bsafe@Bs***.com</small></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="contact-div d-flex flex-column justify-content-center align-items-center">
+                            <div class="icon-div rounded" >
+                                <h4><a href="#office-address" style={{color: "white"}}><i class="bi bi-building-fill" ></i></a></h4>
+                            </div>
+                            <p id="office-address"><small>No physical office yet</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-xxl my-5">
+            <div class="row justify-content-between align-items-top g-4">
+                <div class="col-md-5">
+                    <div class="fs-6"><em>Our mission</em></div><hr style={{marginTop:"0"}}/>
+                    <p style={{color: "rgb(174, 215, 250)"}}><small><em>
+                        Criminals are nuisance for the general public in the entire
+                        world for quite a while now and measures are required to
+                        reduce the crimes that are being committed. Current policing
+                        procedures aim at finding the lawbreakers, fundamentally
+                        after the crime has been committed. However, with the
+                        assistance of technology, we can utilize historic crime data to
+                        identify crime patterns and use them to predict crimes before
+                        they are committed. We aim to completely solve this problem with the help of our website.
+                    </em></small></p>
+                </div>
+                <div class="col-md-3">
+                    <div class="fs-6"><em>Articles referred</em></div><hr style={{marginTop:"0"}}/>
+                    <p><small><em>
+                        <a href="https://zenodo.org/record/4743369/files/1.pdf" style={{color: "rgb(174, 215, 250)"}}>GEO PROFILING MAPS BASED ON CRIME by- 
+                            Siddhant Magow, Harshit Kapoor, Chiranjeev Singh Bindra, Deepak Gupta
+                            UG Student (Maharaja Agrasen Institute of Technology), UG Student (Maharaja Agrasen
+                            Institute of Technology), UG Student (Maharaja Agrasen Institute of Technology), Assistant
+                            Professor (Maharaja Agrasen Institute of Technology)</a>
+                    </em></small></p>
+                </div>
+                <div class="col-md-2">
+                    <div class="fs-6"><em>APIs used</em></div><hr style={{marginTop:"0"}}/>
+                    <p style={{color: "rgb(174, 215, 250)"}}><small><em>
+                        <a href="https://console.cloud.google.com/google/maps-apis/build?project=thinking-seer-417213" style={{color: "rgb(174, 215, 250)"}}>Google Maps API</a>
+                    </em></small></p>
+                    <p style={{color: "rgb(174, 215, 250)"}}><small><em>
+                        <a href="https://www.weatherapi.com/" style={{color: "rgb(174, 215, 250)"}}>Weather API</a>
+                    </em></small></p>
+
+                </div>
+            </div>
+            <hr/>
+            <div class="row justify-content-evenly align-items-top g-0">
+                <div class="col-2">
+                    <a href="#" style={{color: "white"}}><small>Terms and Conditions</small></a>
+                </div>
+                <div class="col-1">
+                    <a href="#" style={{color: "white"}}><small>Services</small></a>
+                </div>
+                <div class="col-1">
+                    <a href="#" style={{color: "white"}}><small>Google Maps</small></a>
+                </div>
+                <div class="col-1">
+                    <a href="#" style={{color: "white"}}><small>E-mail</small></a>
+                </div>
+                <div class="col-1">
+                    <a href="#" style={{color: "white"}}><small>Instagram</small></a>
+                </div>
+                <div class="col-1">
+                    <a href="#" style={{color: "white"}}><small>Facebook</small></a>
+                </div>
+            </div>
+        </div>
     </footer>
     </div>
   )
