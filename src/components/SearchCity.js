@@ -15,8 +15,8 @@ const SearchCity = () => {
         <nav className="navbar fixed-top navbar-expand-lg" style={{backgroundColor: "aliceblue"}} data-bs-theme="light">
             <div className="container-xxl py-1">
                 <a className="navbar-brand fw-bold text-secondary" href="#intro">
-                    <i className="bi bi-radar px-1"></i>
-                    Bsafe
+                    <img src="assets/Bsafe.png" id="Bsafe" alt="Bsafe" />
+                    Bsafe   
                 </a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
